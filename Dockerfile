@@ -10,6 +10,5 @@ add ./app.py /app.py
 run touch /etc/container_environment/SERF_ROLE
 run echo -n "web" > /etc/container_environment/SERF_ROLE
 
-cmd ["/sbin/my_init python /app.py"]
+expose 7946 7373 5000
 
-expose 7946 7373 8000
